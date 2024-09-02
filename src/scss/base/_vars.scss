@@ -1,0 +1,30 @@
+:root {
+  --container-width: 1220px;
+  --container-padding: 15px;
+
+  --font-main: 'Poppins', sans-serif;
+  --font-accent: 'DMSans', sans-serif;
+  --font-titles: var(--font-main);
+
+  --page-bg: #fff;
+  --text-color: #000;
+  --accent: #ac182c;
+  --link-color: #2578c8;
+
+  --laptop-size: 1220px;
+  --tablet-size: 959px;
+  --mobile-size: 599px;
+}
+
+// Typography
+$font-family: 'Poppins', sans-serif;
+$second-family: 'DMSans', sans-serif;
+
+// Colors
+$solid-heading: #42446e;
+$dark-content: #666;
+$solid-heading-dark-mode: #ccc;
+$light-content: #a7a7a7;
+$dark-mode: #191919;
+$button-text: #018c0f;
+$button-success: #d7ffe0;
