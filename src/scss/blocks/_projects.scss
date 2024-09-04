@@ -1,0 +1,29 @@
+.projects {
+  margin-bottom: 220px;
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 81%;
+    text-align: center;
+    color: $dark-content;
+    margin-bottom: 95px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 45px;
+    grid-row-gap: 60px;
+  }
+
+  &__card {
+    border-radius: 20px;
+    width: 373px;
+    height: 567px;
+  }
+}
