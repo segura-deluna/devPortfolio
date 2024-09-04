@@ -14,19 +14,70 @@
 	<body>
 		<header class="header">
 			<div class="container">
-				<div class="header__row"></div>
+				<div class="header__row">
+					<a class="header__logo" href="index.html">
+						<img alt="Logo" src="./img/logo1.svg" />
+					</a>
+
+					<nav class="header__nav nav">
+						<ul class="nav__list">
+							<li><a class="active" href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Tech Stack</a></li>
+							<li><a href="#">Projects</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+					<div class="header__icons icons">
+						<a class="icons__box" href="#">
+							<svg class="icon">
+								<use xlink:href="./img/svgsprite/sprite.symbol.svg#github"></use>
+							</svg>
+						</a>
+						<a class="icons__box" href="#">
+							<svg class="icon">
+								<use xlink:href="./img/svgsprite/sprite.symbol.svg#twitter"></use>
+							</svg>
+						</a>
+						<a class="icons__box" href="#">
+							<svg class="icon">
+								<use xlink:href="./img/svgsprite/sprite.symbol.svg#linkedin"></use>
+							</svg>
+						</a>
+					</div>
+					<button aria-label="Mobile Menu" class="mobile-nav-btn" type="button">
+						<div class="nav-icon"></div>
+					</button>
+				</div>
 			</div>
 		</header>
 		<div class="mobile-nav">
 			<ul class="mobile-nav__list">
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="docs.html">Документация</a></li>
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Tech Stack</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Contact</a></li>
 			</ul>
 		</div>
 
 		<main class="main">
-			<section>
-				<div class="container"></div>
+			<section class="hero">
+				<div class="container">
+					<div class="hero__wrapper">
+						<h1 class="hero__title">
+							Hi&#160;👋,<br />
+							My&#160;name is<br />
+							<span>Pavan MG</span><br />
+							I&#160;build things for web
+						</h1>
+						<picture>
+							<source srcset="./img/user.webp 1x, ./img/user@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/user.jpg 1x, ./img/user@2x.jpg 2x" type="image/jpeg" />
+							<img src="./img/user.jpg" alt="User" class="hero__img" />
+						</picture>
+					</div>
+				</div>
 			</section>
 		</main>
 		<footer class="footer"></footer>

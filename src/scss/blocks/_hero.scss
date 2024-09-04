@@ -1,0 +1,30 @@
+.hero {
+  padding-top: 220px;
+  margin-bottom: 300px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    max-width: 635px;
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 121%;
+    letter-spacing: -0.02em;
+    color: $solid-heading;
+    & span {
+      background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__img {
+    max-width: 350px;
+    border-radius: 50%;
+  }
+}
