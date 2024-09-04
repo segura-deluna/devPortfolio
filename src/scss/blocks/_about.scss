@@ -1,0 +1,32 @@
+.about {
+  margin-bottom: 160px;
+  &__wrapper {
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 81%;
+    text-align: center;
+    color: $dark-content;
+    margin-bottom: 140px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    column-gap: 105px;
+    row-gap: 80px;
+  }
+
+  &__img {
+    width: 120px;
+    height: 120px;
+  }
+}

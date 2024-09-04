@@ -1,6 +1,8 @@
 .title {
-  margin: 1em 0 0.5em;
-  font-size: 38px;
+  font-family: $font-family;
   font-weight: 700;
-  font-family: var(--font-titles);
+  font-size: 48px;
+  line-height: 54%;
+  text-align: center;
+  color: $solid-heading;
 }
