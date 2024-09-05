@@ -4,6 +4,12 @@
   }
 }
 
+@mixin notebook() {
+  @media (max-width: 1240px) {
+    @content;
+  }
+}
+
 @mixin tablet() {
   @media (max-width: 900px) {
     @content;

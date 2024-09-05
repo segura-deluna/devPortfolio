@@ -4,6 +4,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__nav {
@@ -12,6 +16,12 @@
     font-size: 18px;
     line-height: 144%;
     color: $solid-heading;
+    @include tablet {
+      margin-bottom: 20px;
+    }
+    @include mobile {
+      display: none;
+    }
   }
 
   &__author {
@@ -21,6 +31,9 @@
     line-height: 144%;
     text-align: center;
     color: $dark-content;
+    @include mobile {
+      font-size: 16px;
+    }
     & span {
       background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);
       background-clip: text;

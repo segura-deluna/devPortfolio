@@ -1,10 +1,18 @@
 .hero {
   padding-top: 220px;
   margin-bottom: 300px;
+  @include tablet {
+    padding-top: 50px;
+    margin-bottom: 100px;
+  }
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__title {
@@ -15,6 +23,11 @@
     line-height: 121%;
     letter-spacing: -0.02em;
     color: $solid-heading;
+    @include tablet {
+      text-align: center;
+      font-size: 46px;
+      margin-bottom: 50px;
+    }
     & span {
       background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);
       background-clip: text;

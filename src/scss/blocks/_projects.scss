@@ -1,7 +1,13 @@
 .projects {
   margin-bottom: 220px;
+  @include tablet {
+    margin-bottom: 50px;
+  }
   &__title {
     margin-bottom: 50px;
+    @include tablet {
+      margin-bottom: 30px;
+    }
   }
 
   &__text {
@@ -12,6 +18,10 @@
     text-align: center;
     color: $dark-content;
     margin-bottom: 95px;
+    @include tablet {
+      font-size: 20px;
+      margin-bottom: 50px;
+    }
   }
 
   &__content {
@@ -19,11 +29,18 @@
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 45px;
     grid-row-gap: 60px;
+    @include notebook {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 auto;
+    }
   }
 
   &__card {
     border-radius: 20px;
-    width: 373px;
-    height: 567px;
+    width: 100%;
+    max-width: 373px;
+    height: auto;
   }
 }

@@ -5,4 +5,7 @@
   line-height: 54%;
   text-align: center;
   color: $solid-heading;
+  @include tablet {
+    font-size: 36px;
+  }
 }

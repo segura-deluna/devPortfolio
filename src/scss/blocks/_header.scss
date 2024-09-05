@@ -9,12 +9,18 @@
     justify-content: space-between;
     align-items: center;
   }
-}
 
-.header__nav {
-  margin-left: auto;
-  margin-right: 50px;
-  @include tablet {
-    display: none;
+  &__logo {
+    @include tablet {
+      width: 70px;
+    }
+  }
+
+  &__nav {
+    margin-left: auto;
+    margin-right: 50px;
+    @include tablet {
+      display: none;
+    }
   }
 }

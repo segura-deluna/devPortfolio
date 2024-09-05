@@ -5,25 +5,49 @@
     align-items: center;
     padding-bottom: 50px;
     border-bottom: 1px solid $dark-content;
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__logo {
     max-width: 97px;
+    @include tablet {
+      display: none;
+    }
   }
 
   &__nums {
+    width: 100%;
+    max-width: 560px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include tablet {
+      flex-direction: column;
+    }
+    @include mobile {
+      justify-content: center;
+    }
   }
 
   &__phones {
-    max-width: 440px;
+    width: 100%;
+    max-width: 360px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 65px;
-    margin-right: 100px;
+
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
     & a {
       color: $dark-content;
       text-decoration: none;
@@ -35,13 +59,16 @@
   }
 
   &__phone {
+    width: 100%;
+    max-width: 170px;
   }
 
   &__mail {
+    text-align: center;
   }
 
   &__links {
-    max-width: 130px;
+    width: 130px;
     display: flex;
     justify-content: space-between;
     align-items: center;
