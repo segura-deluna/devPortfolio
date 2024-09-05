@@ -29,17 +29,17 @@
 						</ul>
 					</nav>
 					<div class="header__icons icons">
-						<a class="icons__box" href="#">
+						<a class="icons__box" target="_blank" href="#">
 							<svg class="icon">
 								<use xlink:href="./img/svgsprite/sprite.symbol.svg#github"></use>
 							</svg>
 						</a>
-						<a class="icons__box" href="#">
+						<a class="icons__box" target="_blank" href="#">
 							<svg class="icon">
 								<use xlink:href="./img/svgsprite/sprite.symbol.svg#twitter"></use>
 							</svg>
 						</a>
-						<a class="icons__box" href="#">
+						<a class="icons__box" target="_blank" href="#">
 							<svg class="icon">
 								<use xlink:href="./img/svgsprite/sprite.symbol.svg#linkedin"></use>
 							</svg>
@@ -305,8 +305,55 @@
 					</div>
 				</div>
 			</section>
+			<section class="contacts" id="contact">
+				<div class="container">
+					<div class="contacts__wrapper">
+						<div class="contacts__logo">
+							<img src="./img/logo2.svg" alt="Logo" />
+						</div>
+						<div class="contacts__nums">
+							<div class="contacts__phones">
+								<a href="tel:+91 12345 09876" class="contacts__phone">+91 12345 09876</a>
+								<a href="mailto:info@example.com" class="contacts__mail">info@example.com</a>
+							</div>
+							<div class="contacts__links">
+								<a href="#" target="_blank" class="icons__box">
+									<svg class="icon">
+										<use xlink:href="./img/svgsprite/sprite.symbol.svg#github"></use>
+									</svg>
+								</a>
+								<a href="#" target="_blank" class="icons__box">
+									<svg class="icon">
+										<use xlink:href="./img/svgsprite/sprite.symbol.svg#twitter"></use>
+									</svg>
+								</a>
+								<a href="#" target="_blank" class="icons__box">
+									<svg class="icon">
+										<use xlink:href="./img/svgsprite/sprite.symbol.svg#linkedin"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
-		<footer class="footer"></footer>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__nav nav">
+						<ul class="nav__list">
+							<li><a class="active" href="#">Home</a></li>
+							<li><a href="#hero">About</a></li>
+							<li><a href="#about">Tech Stack</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
+					<div class="footer__author">Designed and built by&#160;<span>Pavan MG</span> with <span>Love</span> & <span>Coffee</span></div>
+				</div>
+			</div>
+		</footer>
 
 		<script src="./js/index.bundle.js"></script>
 	</body>

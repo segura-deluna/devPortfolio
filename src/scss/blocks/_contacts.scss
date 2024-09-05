@@ -1,0 +1,50 @@
+.contacts {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+    border-bottom: 1px solid $dark-content;
+  }
+
+  &__logo {
+    max-width: 97px;
+  }
+
+  &__nums {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__phones {
+    max-width: 440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 65px;
+    margin-right: 100px;
+    & a {
+      color: $dark-content;
+      text-decoration: none;
+
+      &:hover {
+        color: $solid-heading;
+      }
+    }
+  }
+
+  &__phone {
+  }
+
+  &__mail {
+  }
+
+  &__links {
+    max-width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+}

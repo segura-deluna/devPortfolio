@@ -1,2 +1,31 @@
 .footer {
+  &__wrapper {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    font-family: $second-family;
+    font-weight: 400 !important;
+    font-size: 18px;
+    line-height: 144%;
+    color: $solid-heading;
+  }
+
+  &__author {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    text-align: center;
+    color: $dark-content;
+    & span {
+      background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
 }
